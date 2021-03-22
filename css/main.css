@@ -11,4 +11,15 @@ html {
 h1, h2 {
   font-style: italic;
 }
+
+body {
+  margin: 0;
+  padding: 0;
+
+  grid-template-columns: 1fr;
+  display: grid;
+  grid-template-areas:
+  "header"
+  "main"
+}
 /*font-family: Merriweather, serif;*/
