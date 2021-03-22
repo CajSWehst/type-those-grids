@@ -10,11 +10,13 @@ html {
 
 h1, h2 {
   font-style: italic;
+  font-size: 1.8rem;
 }
 
 body {
   margin: 0;
   padding: 0;
+  align-self:auto;
 
   gap: .75rem;
   grid-template-columns: 1fr 1fr 1fr;
@@ -22,5 +24,13 @@ body {
   grid-template-areas:
   "header"
   "main"
+}
+
+header {
+    grid-area: banner;
+}
+
+main {
+  grid-area: main;
 }
 /*font-family: Merriweather, serif;*/
