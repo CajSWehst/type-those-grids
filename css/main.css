@@ -16,7 +16,8 @@ body {
   margin: 0;
   padding: 0;
 
-  grid-template-columns: 1fr;
+  gap: .75rem;
+  grid-template-columns: 1fr 1fr 1fr;
   display: grid;
   grid-template-areas:
   "header"
