@@ -22,12 +22,20 @@ body {
   grid-template-columns: 1fr 1fr 1fr;
   display: grid;
   grid-template-areas:
-        "header"
-        "main"
+  "header"
+  "main"
+}
+
+.main-grid {
+  list-style-type: none;
+  padding: 0;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(15rem, 100%),1fr));
 }
 
 header {
-    grid-area: banner;
+  grid-area: banner;
 }
 
 main {
