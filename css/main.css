@@ -16,14 +16,14 @@ h1, h2 {
 body {
   margin: 0;
   padding: 0;
-  align-self:auto;
+  align-self: auto;
 
   gap: .75rem;
   grid-template-columns: 1fr 1fr 1fr;
   display: grid;
   grid-template-areas:
-  "header"
-  "main"
+        "header"
+        "main"
 }
 
 header {
