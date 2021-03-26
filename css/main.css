@@ -22,8 +22,16 @@ body {
   grid-template-columns: 1fr 1fr 1fr;
   display: grid;
   grid-template-areas:
-  "header"
-  "main"
+  "banner banner banner"
+  "main main main";
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: .75rem;
 }
 
 .main-grid {
@@ -31,7 +39,7 @@ body {
   padding: 0;
 
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(15rem, 100%),1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(15rem,100%),1fr));
 }
 
 header {
@@ -40,5 +48,16 @@ header {
 
 main {
   grid-area: main;
+}
+
+.banner-overlay {
+background-color: #464646;
+color: #fff;
+margin: 0;
+text-align: left;
+padding: 0;
+background-image: url(../images/abduction-of-helen.jpg);
+background-position: center;
+background-size: auto;
 }
 /*font-family: Merriweather, serif;*/
