@@ -8,56 +8,18 @@ html {
   box-sizing: inherit;
 }
 
-h1, h2 {
-  font-style: italic;
-  font-size: 1.8rem;
+img {
+  width: 100%;
 }
 
 body {
   margin: 0;
-  padding: 0;
-  align-self: auto;
-
-  gap: .75rem;
-  grid-template-columns: 1fr 1fr 1fr;
-  display: grid;
-  grid-template-areas:
-  "banner banner banner"
-  "main main main";
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: .75rem;
-}
-
-.main-grid {
-  list-style-type: none;
-  padding: 0;
-
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(15rem,100%),1fr));
-}
-
-header {
-  grid-area: banner;
 }
 
 main {
-  grid-area: main;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
-.banner-overlay {
-background-color: #464646;
-color: #fff;
-margin: 0;
-text-align: left;
-padding: 0;
-background-image: url(../images/abduction-of-helen.jpg);
-background-position: center;
-background-size: auto;
-}
+
 /*font-family: Merriweather, serif;*/
